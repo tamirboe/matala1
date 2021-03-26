@@ -52,7 +52,7 @@ def Ln(x:float)  -> float:
     
 
 def XtimesY(x:float,y:float) ->float:
-    xy = exponent(y*ln(x))
+    xy = exponent(y*Ln(x))
     if (x<0) :
         return(0)
     elif x==0:
@@ -69,7 +69,7 @@ def sqrt(x:float,y:float) ->float:
     #elif y==0:
     #    return(0)
     else:
-        return(exponent((1/y)*ln(x)))
+        return(exponent((1/y)*Ln(x)))
 
 
 def calculate(x:float) ->float:
