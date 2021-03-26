@@ -29,7 +29,7 @@ def exponent(x:float) ->float:
 
 
  
-def ln(x:float)  -> float:
+def Ln(x:float)  -> float:
     epsilon = 0.001
     
     if x<0 :
