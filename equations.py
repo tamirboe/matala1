@@ -46,34 +46,30 @@ def Ln(x:float)  -> float:
         yn = yn1
         yn1= yn +2*((x-exponent(yn))/(x+exponent(yn)))
         yabss = yn - yn1
-        if (yabss ) < 0:
+        if yabss < 0:
             yabss= yabss*-1  
     return yn1
     
 
 def XtimesY(x:float,y:float) ->float:
     xy = exponent(y*Ln(x))
-    if (x<0) :
-        return(0)
+    if x<0 :
+        return 0 
     elif x==0:
-        return(0)
+        return 0 
     else:
-        return(xy)
+        return xy
     
    
     
 def sqrt(x:float,y:float) ->float:
-    #xy = exponent((1/x)*ln(y))
-    if (y<=0):
-        return(0)
-    #elif y==0:
-    #    return(0)
+    if y<=0:
+        return 0
     else:
-        return(exponent((1/y)*Ln(x)))
+        return(exponent((1/x)*Ln(y)))
 
 
 def calculate(x:float) ->float:
     cal = exponent(x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x) 
 
     return cal
-    #exponent(x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x) 
