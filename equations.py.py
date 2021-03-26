@@ -5,10 +5,6 @@ Created on Mon Mar 22 17:11:18 2021
 """
 
 
-num = input("enter number: ")
-num= float(num)
-
-
 
 
 def exponent(x:float) ->float:
@@ -81,6 +77,3 @@ def calculate(x:float) ->float:
 
     return cal
     #exponent(x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x) 
-
-#a=calculate(num)
-#print(a)
